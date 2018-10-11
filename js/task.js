@@ -7,22 +7,24 @@ function createId() {
 }
 
 function createTask() {
-
+    
     let $task = document.getElementById("newTask").value;
-    let task = {
-        id: createId(),
-        data: {
-            task: $task
+    if(!$task == "") {
+        let task = {
+            id: createId(),
+            data: {
+                task: $task
+            }
         }
+        tasks.push(task);
+        
+        updateScreen();   
     }
-    tasks.push(task);
-
-    updateScreen();
 }
 
 function removeTask(element) {
     
     tasks = tasks.filter(task => task.id != element.getAttribute("id"));
-
+    
     updateScreen();
 }
