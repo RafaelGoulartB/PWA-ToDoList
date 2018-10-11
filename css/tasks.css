@@ -13,10 +13,34 @@
     border-radius: 10px;
 }
 .todo-items div li {
-    margin-left: 2em;
-    margin-top: 1px;
+    margin-left: 1.5em;
+    margin-top: 5px;
 }
 
 .btn-remover {
-    background-color: #ffffff;
+    color: #fff;
+    font-size: 12pt;
+    background-color: #e44232;
+    width: 150px;
+    height: 25px;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+
+@media(max-width: 850px) {
+    #list {
+    }
+    .todo-items div {
+        width: 100%;
+    }
+    .todo-items div li {
+        margin: auto;
+    }
+
+    .btn-remover {
+        display: none;
+    }
 }

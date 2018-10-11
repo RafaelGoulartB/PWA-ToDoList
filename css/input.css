@@ -10,24 +10,39 @@
 #newTask {
     margin: 3em auto 1.5em auto;
     background-color: #ffffff;
-    width: 240px;
-    height: 40px;
+    width: 220px;
+    height: 35px;
     border-radius: 10px;
     border-style:solid;
     border:none;
 }
 
 .title {
-    font-size: 28pt;
+    font-size: 24pt;
     text-align: center;
 }
 #btn-add {
     color: #fff;
     font-size: 12pt;
     background-color: #e44232;
-    width: 200px;
+    width: 180px;
     height: 30px;
     border-style: solid;
     border-color: #fff;
     border-radius: 10px;
+}
+
+@media(max-width: 850px) {
+    .title {
+        font-size: 18pt;
+    }
+    #newTask {
+        margin-top: 1.5em;
+        width: 180px;
+        height: 30px;
+    }
+    #btn-add {
+        width: 160px;
+        height: 30px;
+    }
 }
