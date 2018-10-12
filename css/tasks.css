@@ -14,7 +14,7 @@
 }
 .todo-items div li {
     margin-left: 1.5em;
-    margin-top: 5px;
+    line-height: 1.25em;
 }
 
 .btn-remover {
@@ -38,6 +38,7 @@
     }
     .todo-items div li {
         margin: auto;
+        line-height: 0.25em;
     }
 
     .btn-remover {
