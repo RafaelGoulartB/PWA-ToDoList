@@ -28,3 +28,4 @@ function removeTask(element) {
     
     updateScreen();
 }
+
