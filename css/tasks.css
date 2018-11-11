@@ -3,17 +3,16 @@
 }
 .todo-items div {
     display: flex;
-    width: 100vh;
     justify-content: space-between;
+    align-items: center;
+    width: 100vh;
     padding: 0.5em;
-    border-style: solid;
-    border-color: #fff;
-    border-width: 1px;
+    border: 1px solid #fff;
     margin: 1em auto;
     border-radius: 10px;
+
 }
 .todo-items div li {
-    margin-left: 1.5em;
     line-height: 1.25em;
 }
 
@@ -21,12 +20,19 @@
     color: #fff;
     font-size: 12pt;
     background-color: #e44232;
-    width: 150px;
-    height: 25px;
-    border-style: solid;
-    border-color: #fff;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+}
+.btn-complete {
+    color: #fff;
+    font-size: 12pt;
+    background-color: #e44232;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
     border-radius: 10px;
-    border-width: 1px;
 }
 
 
@@ -39,6 +45,7 @@
     .todo-items div li {
         margin: auto;
         line-height: 0.25em;
+        font-size: 12pt;
     }
 
     .btn-remover {
