@@ -8,19 +8,21 @@
 }
 
 #newTask {
-    margin: 3em auto 1.5em auto;
+    margin: 1em auto 1.5em auto;
     background-color: #ffffff;
-    width: 220px;
+    width: 280px;
     height: 32px;
     border-radius: 10px;
     border-style:solid;
     border:none;
     padding-left: 15px;
+    color: #000;
 }
 
 .title {
-    font-size: 24pt;
+    font-size: 22pt;
     text-align: center;
+    display: none;
 }
 #btn-add {
     color: #fff;
@@ -38,12 +40,17 @@
         font-size: 18pt;
     }
     #newTask {
-        margin-top: 1.5em;
-        width: 180px;
+        margin-top: .1em;
+        width: 250px;
         height: 30px;
     }
     #btn-add {
         width: 160px;
         height: 30px;
     }
+}
+@media(max-width: 400px) {
+    .title {
+        font-size: 15pt;
+    }  
 }

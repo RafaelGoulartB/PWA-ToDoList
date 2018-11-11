@@ -3,6 +3,13 @@
     justify-content: space-around;
     margin-bottom: 2em;
     margin-top: -1.5em;
+    
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-bottom: 2em;
+    border-bottom: 2px solid #fff;
+    width: 85vw;
 }
 .content div {
     display: flex;
@@ -13,5 +20,32 @@
 }
 .content div .description-num-tasks {
     margin-left: 5px;
+}
 
+@media(max-width: 850px) {
+    .content div .num-completed-tasks {
+        font-size: 18pt;
+    }
+    .content div .description-num-tasks {
+        font-size: 11pt;
+    }
+    
+}
+@media(max-width: 690px) {
+    .content div {
+        display: none;
+    }
+    .content div:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content div .num-completed-tasks {
+        font-size: 23pt;
+    }
+    .content div .description-num-tasks {
+        font-size: 13pt;
+    }
+    
+    
 }
