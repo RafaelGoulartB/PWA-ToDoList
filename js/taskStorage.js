@@ -1,5 +1,6 @@
 let myStorage = window.localStorage;
 var tasks = [];
+var numTasks = 0;
 
 
 function loadTasks() {
@@ -10,12 +11,12 @@ function loadTasks() {
     updateScreen();
     console.log('load');
 };
+
 loadTasks();
 
 function createId() {
     var date = new Date();
     let id = date.getDate() +""+ date.getDay() +""+ date.getMinutes() +""+ date.getMilliseconds();
-    
     return id;
 }
 
@@ -34,6 +35,7 @@ function createTask() {
         myStorage.setItem('tasks', JSON.stringify(tasks))
         
         updateScreen();
+
     }
 }
 
@@ -45,3 +47,7 @@ function removeTask(element) {
     updateScreen();
 }
 
+function countTasks() {
+    numTasks = tasks.length;
+
+}

@@ -1,0 +1,17 @@
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+    margin-top: -1.5em;
+}
+.content div {
+    display: flex;
+    align-items: baseline;
+}
+.content div .num-completed-tasks {
+    font-size: 24pt;
+}
+.content div .description-num-tasks {
+    margin-left: 5px;
+
+}

@@ -8,13 +8,37 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/input.css">
     <link rel="stylesheet" href="css/tasks.css">
+    <link rel="stylesheet" href="css/countTasks.css">
 </head>
 <body>
 
     <div class="container">
         
+        <section class="counter">
+
+            <div class="content">
+                
+                <div class="tasks_today">
+                    <p class="num-completed-tasks">0</p>
+                    <p class="description-num-tasks">Tarefas completas hoje</p>
+                </div>
+        
+                <div class="tasks_week line-div">
+                    <p class="num-completed-tasks">0</p>
+                    <p class="description-num-tasks">Tarefas completas na semana</p>
+                    
+                </div>
+        
+                <div class="tasks_month line-div">
+                    <p class="num-completed-tasks">0</p>
+                    <p class="description-num-tasks">Tarefas completas no mês</p>
+                </div>
+            
+            </div>
+        </section>
+
         <div class="input">
-            <h1 class="title">Add a new Task</h1>
+            <h1 class="title">Adicione uma nova tarefa</h1>
             <input type="text" name="task" id="newTask" autofocus>
             <button for="newTask" onclick="createTask()" id="btn-add">Adicionar</button>
         </div>
@@ -22,6 +46,7 @@
     </div>
     
     <div id="list"></div>
+
     
     
     <script src="js/updateScreen.js"></script>
