@@ -12,9 +12,6 @@
     border-radius: 10px;
 
 }
-.todo-items div li {
-    line-height: 1.25em;
-}
 
 .btn-remover {
     color: #fff;
@@ -36,7 +33,7 @@
 }
 
 
-@media(max-width: 850px) {
+@media(max-width: 690px) {
     #list {
     }
     .todo-items div {
@@ -44,11 +41,8 @@
     }
     .todo-items div li {
         margin: auto;
-        line-height: 0.25em;
-        font-size: 12pt;
+        line-height: 1.5em;
+        font-size: 10pt;
     }
-
-    .btn-remover {
-        display: none;
-    }
+    
 }
