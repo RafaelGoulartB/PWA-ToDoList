@@ -4,50 +4,42 @@ var numTasks = 0;
 
 
 function loadTasks() {
+    // Carrega Tarefas
     let task_str = myStorage.getItem('tasks');
     if(task_str) {
         tasks = JSON.parse(task_str);
     }
+    // Carrega Números de tarefas compridas
+    let num_task_str = myStorage.getItem('tasks_completed');
+    if(num_task_str) {
+        numTasks = JSON.parse(num_task_str);
+    }
+
     updateScreen();
-    console.log('load');
+    
 };
 
 loadTasks();
 
-function createId() {
-    var date = new Date();
-    let id = date.getDate() +""+ date.getDay() +""+ date.getMinutes() +""+ date.getMilliseconds();
-    return id;
-}
-
-function createTask() {
-    
-    let $task = document.getElementById("newTask").value;
-    if(!$task == "") {
-        let task = {
-            id: createId(),
-            data: {
-                task: $task
-            }
-        }
-        tasks.push(task);
-        
-        myStorage.setItem('tasks', JSON.stringify(tasks))
-        
-        updateScreen();
-
-    }
-}
-
 function removeTask(element) {
     
     tasks = tasks.filter(task => task.id != element.getAttribute("id"));
-    myStorage.setItem('tasks', JSON.stringify(tasks))
+    myStorage.setItem('tasks', JSON.stringify(tasks));
     
     updateScreen();
 }
 
 function countTasks() {
-    numTasks = tasks.length;
+    numTasks += 1;
+}
 
+function completeTask(element) {
+    tasks = tasks.filter(task => task.id != element.getAttribute("id"));
+    countTasks();
+    
+    
+    myStorage.setItem('tasks', JSON.stringify(tasks));
+    myStorage.setItem('tasks_completed', JSON.stringify(numTasks));
+    
+    updateScreen();
 }
