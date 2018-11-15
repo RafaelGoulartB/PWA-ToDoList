@@ -1,3 +1,3 @@
 ToDo-List Web
 
-https://rafaelgoulartb.github.io/Simple-ToDo-List/
+https://rafaelgoulartb.github.io/ToDo-List/
