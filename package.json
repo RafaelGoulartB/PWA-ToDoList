@@ -1,0 +1,26 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "To do list web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelGoulartB/ToDo-List.git"
+  },
+  "keywords": [
+    "to-do"
+  ],
+  "author": "Rafael Goulart Bernardo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RafaelGoulartB/ToDo-List/issues"
+  },
+  "homepage": "https://github.com/RafaelGoulartB/ToDo-List#readme",
+  "devDependencies": {
+    "eslint": "^5.15.0",
+    "eslint-config-google": "^0.12.0"
+  }
+}
