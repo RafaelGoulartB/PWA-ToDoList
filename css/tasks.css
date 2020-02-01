@@ -16,7 +16,7 @@
 .btn-remover {
     color: #fff;
     font-size: 12pt;
-    background-color: #e44232;
+    background-color: #2f3437;
     width: 30px;
     height: 30px;
     border: 1px solid #fff;
@@ -25,7 +25,7 @@
 .btn-complete {
     color: #fff;
     font-size: 12pt;
-    background-color: #e44232;
+    background-color: #2f3437;
     width: 20px;
     height: 20px;
     border: 1px solid #fff;
@@ -44,5 +44,5 @@
         line-height: 1.5em;
         font-size: 10pt;
     }
-    
+
 }

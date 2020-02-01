@@ -27,7 +27,7 @@
 #btn-add {
     color: #fff;
     font-size: 12pt;
-    background-color: #e44232;
+    background-color: #2f3437;
     width: 180px;
     height: 30px;
     border-style: solid;
@@ -52,5 +52,5 @@
 @media(max-width: 400px) {
     .title {
         font-size: 15pt;
-    }  
+    }
 }
