@@ -14,7 +14,6 @@
 
 > To do list web
 
-![Project Image](https://github.com/RafaelGoulartB/ToDo-List/blob/master/todo-list.png)
 
 ### 🏠 [Homepage](https://rafaelgoulartb.github.io/ToDo-List/)
 
