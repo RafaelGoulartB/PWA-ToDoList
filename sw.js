@@ -6,20 +6,20 @@ self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
       return cache.addAll([
-        '/',
-        '/css/',
-        '/js/',
-        '/index.html',
-        '/manifest.json',
-        '/icon.png',
-        '/css/countTasks.css',
-        '/css/index.css',
-        '/css/input.css',
-        '/css/reset.css',
-        '/css/tasks.css',
-        '/js/taskFactory.js',
-        '/js/taskStorage.js',
-        '/js/updateScreen.js',
+        './',
+        './css/',
+        './js/',
+        './index.html',
+        './manifest.json',
+        './icon.png',
+        './css/countTasks.css',
+        './css/index.css',
+        './css/input.css',
+        './css/reset.css',
+        './css/tasks.css',
+        './js/taskFactory.js',
+        './js/taskStorage.js',
+        './js/updateScreen.js',
       ]);
     })
   )
