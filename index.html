@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="manifest" href="/manifest.json">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./icon.png" />
     <title>Simple Todo list</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
@@ -13,7 +15,7 @@
 <body>
 
     <div class="container">
-        
+
         <section class="counter">
 
             <div class="content">
@@ -32,16 +34,24 @@
         </div>
 
     </div>
-    
+
     <div id="list"></div>
 
-    
-    
     <script src="js/updateScreen.js"></script>
     <script src="js/taskStorage.js"></script>
     <script src="js/taskFactory.js"></script>
 
-
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function () {
+            console.log('service worker registered');
+          })
+          .catch(function () {
+            console.warn('service worker failed');
+          });
+      }
+    </script>
 
 </body>
 </html>
