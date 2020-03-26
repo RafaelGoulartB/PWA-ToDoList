@@ -31,6 +31,8 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 
 Give a ⭐️ if this project helped you!
 
+![Project Image](https://github.com/RafaelGoulartB/PWA-ToDoList/blob/master/todolist.png)
+
 ## 📝 License
 
 Copyright © 2019 [Rafael Goulart Bernardo](https://github.com/RafaelGoulartB).<br />
