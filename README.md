@@ -14,8 +14,14 @@
 
 > To do list web
 
-
-### 🏠 [Homepage](https://rafaelgoulartb.github.io/ToDo-List/)
+## 💻 Technologies
+This project was made using the follow technologies:
+<ul>
+  <li><a href="#">HTML</a></li>
+  <li><a href="#">CSS</a></li>
+  <li><a href="#">JavaScript</a></li>
+  <li><a href="https://eslint.org/">Eslint</a></li>
+</ul>
 
 ## Author
 
